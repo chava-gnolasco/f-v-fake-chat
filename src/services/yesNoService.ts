@@ -2,6 +2,17 @@ import axios from 'axios';
 
 import type { YesNoResponse } from '@/types/yesNo';
 
+/**
+ * Axios client instance configured to interact with the YesNo API.
+ * 
+ * Base URL: `https://yesno.wtf`
+ * Headers:
+ * - `Content-Type`: `application/json`
+ * - `Accept`: `application/json`
+ * 
+ * This client can be used to make HTTP requests to the YesNo API for fetching
+ * yes/no responses.
+ */
 const axiosClient = axios.create({
   baseURL: 'https://yesno.wtf',
   headers: {
